@@ -21,6 +21,7 @@ public class PersonController {
         model.addAttribute("personList", repository.findAll());
         return "home";
     }
+
     @GetMapping("/savePersonPage")
     public String savePersonPage(Model model) {
         PersonEntity person=new PersonEntity();
